@@ -1,0 +1,164 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	background-image: url('./img/lighthouse-gf6a4187c9_1920.jpg');
+	z-index: -1000;
+}
+
+.form-box {
+	width: 30em;
+	padding: 2em;
+	backdrop-filter: blur(5px);
+	background-color: rgba(255, 255, 255, 0.651);
+	border-radius: 8px;
+	z-index: 10000;
+}
+
+.form-box h1 {
+	font-size: 2.5rem;
+	text-align: center;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+	color: rgb(0, 0, 0);
+}
+
+.form-box input, select {
+	width: 100%;
+	padding: 0.5em;
+	border-radius: 4px;
+	border: none;
+	background-color: #fff;
+	z-index: 1;
+}
+
+
+.form-box label{
+	font-size: 1.1rem;
+}
+
+.buttons{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2em;
+	
+	
+}
+.buttons button{
+	text-transform: uppercase;
+	padding: 1em;
+	width: 30%;
+	border: none;
+	border-radius: 50px;
+	transition: .3s;
+}
+
+.cancel:hover{
+	transform: scale(1.1);
+	background-color: rgb(253, 176, 176)
+
+}
+
+.submit{
+	background-color: rgb(6, 132, 250);
+	color: #fff;
+	
+
+}
+
+.submit:hover{
+	transform: scale(1.1);
+	background-color: rgb(57, 159, 255)
+}
+
+
+.input-err{
+	border: 1px solid rgb(6, 132, 250);
+}
+.error{
+	padding: 0.1em;
+	visibility: hidden;
+	color: rgb(6, 132, 250);
+	text-align: center;
+}
+
+.error-inh{
+	visibility: inherit;
+}
+
+.user-box{
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff98;
+	overflow: hidden;
+	height: 6em;
+	z-index: 1000;
+	
+
+}
+
+.fa-xmark{
+	position: relative;
+	left: 23.5em;
+	top: -3.2em;
+	padding: 5px;
+	cursor: pointer;
+	z-index: 1000;
+	
+	
+}
+
+.user-data{
+	position: relative;
+	font-size: 14px;
+	left: 4.5em;
+	top: -5.5em;
+}
+
+.user-box img{
+	position: relative;
+	top: 1em;
+	width: 60px;
+	border-radius: 50%;
+	padding: 5px;
+	
+}
+
+.user-title{
+	text-transform: uppercase;
+	text-align: center;
+	padding: 1em;
+}
+
+.user-list{
+	
+	
+	// overflow-y:scroll;
+	position: absolute;
+	height: 30em;
+	width: 25em;
+	transform: translateX(5em);
+	opacity: 0;
+	backdrop-filter: blur(5px);
+	background-color: rgba(255, 255, 255, 0.651);
+	border-radius: 8px;
+	transition: .5s;
+	z-index: 1000;
+}
+
+.list{
+	list-style-type: none;
+}
+
+.user-vis{
+	opacity: 1;
+	transform: translateX(28.5em);
+}

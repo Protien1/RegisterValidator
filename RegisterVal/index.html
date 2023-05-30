@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="./main.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/60e19c4821.js" crossorigin="anonymous"></script>
+
+
+
+
+</head>
+
+<body>
+
+  <div class="form-box">
+    <div class="blur"></div>
+    <h1 class="register">Register</h1>
+
+ 
+    <label for="username-input">Username:</label>
+    <input type="text" class="username-input" placeholder="Type your Username">
+    <p class="username-error error">Set a Username!</p>
+
+ 
+    <label for="email-input">E-mail:</label>
+    <input type="email" class="email-input" placeholder="Type your E-mail">
+    <p class="emial-error error">Add e-mail!</p>
+
+ 
+    <label for="password-input">Password:</label>
+    <input type="password" class="password-input" placeholder="Type your Password">
+    <p class="password-error error">Password is inncorect!</p>
+
+    
+    <label for="re-password">Repeat Password:</label>
+    <input type="password" class="re-password-input" placeholder="Repeat your Password">
+    <p class="re-password-error error ">Password don't match</p>
+
+
+
+   <label for="gender">Gender:</label>
+    <select name="" id="gender" class="gender">
+      <option value="0" selected disabled >- Choose Gender -</option>
+      <option value="1">Male</option>
+      <option value="2">Female</option>
+    </select>
+    <p class="gender-error error ">Choose a gender!</p>
+
+   <label for="birthday">Age:</label>
+    <input type="date" class="birthday" >
+    <p class="birthday-error error ">Set a date!</p>
+
+    <div class="buttons">
+      <button class="submit">Sing up</button>
+      <button class="cancel">Cancel</button>
+    </div>
+  </div>
+
+<div class="user-list">
+  <h2 class="user-title">User List</h2>
+<ul class="list">
+  
+  
+  
+  
+
+  
+</ul>
+<!-- <li>  <div class="user-box">
+  <img src="./img/male-user.png" alt="user icon" class="icon-img">
+  <div class="tools"><i class="fa-solid fa-xmark"></i></div>
+  <p class="user-data user-username"><b>User:</b> Protein</p>
+  <p class="user-data user-emial"><b>E-mail:</b> marcinwojtczak021@gmai.com</p>
+  <p class="user-data user-password"><b>Password:</b> Guwnomp12</p>
+  <p class="user-data user-age"><b>Age:</b> 27</p>
+</div></li> -->
+</div>
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
